@@ -9,15 +9,22 @@ const info = async() =>{  //await solo funciona para funciones asincronas asi qu
 
         if(respuesta.status ===200){ //si la respuesta es correcta
             const datos = await respuesta.json();
+console.log(datos);
 
             datos.forEach(dato => {
-                
                 if(dato.casa.nombre=="Dolar Blue"){
                 document.getElementById("valorCompra").innerHTML=dato.casa.compra;
                 document.getElementById("valorVenta").innerHTML=dato.casa.venta;
                 }
-
             });
+            datos.forEach(dato => {
+                if(dato.casa.nombre=="Dolar Oficial"){
+                document.getElementById("valorCompraOf").innerHTML=dato.casa.compra;
+                document.getElementById("valorVentaOf").innerHTML=dato.casa.venta;
+                }
+            });
+
+            
 
             
         }
