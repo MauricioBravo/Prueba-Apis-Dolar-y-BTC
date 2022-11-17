@@ -24,9 +24,6 @@ console.log(datos);
                 }
             });
 
-            
-
-            
         }
     }
    
@@ -44,7 +41,7 @@ info();
 //     if(this.readyState == 4 && this.status ==200){
 //        const data= JSON.parse(this.response);
 //        const HTMLResponse = document.querySelector('#app');
-
+//asd
 
 //     }
 // }
