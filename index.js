@@ -2,6 +2,8 @@
 
 // const HTMLResponse = document.querySelector("#app");
 
+// AVERIGUAR CADA CUANTO SE REFREZCA ESTA API O BUSCAR UNA MEJOR 
+
 const info = async() =>{  //await solo funciona para funciones asincronas asi que se le agrega "async"
 
         const respuesta = await fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales'); // fetch devuelve una promesa 
